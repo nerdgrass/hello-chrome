@@ -5,5 +5,6 @@ $(function() { //shorthand document.ready function
         e.preventDefault();  //prevent form from submitting
         var data = $("#foo :input").serializeArray();
         console.log(data); //use the console for debugging, F12 in Chrome, not alerts
+        $("#foo")[0].reset();
     });
 });
