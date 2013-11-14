@@ -1,4 +1,4 @@
-// document.forms['usb-input-form'].elements['usb-input'].focus();
+document.forms['foo'].elements['usb-input'].focus();
 
 $(function() { //shorthand document.ready function
     $('#foo').on('submit', function(e) { //use on if jQuery 1.7+
