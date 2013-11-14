@@ -5,10 +5,12 @@
   <body>
     <div>Hello, world!</div>
     <div>
-      <form name="usb-input-form">
-        <input name="usb-input"></input>
+      <form id="foo" name="foo" method="POST">
+        <input name="usb-input" id="usb-input"></input>
+        <input type="submit" value="Submit" name="submit" class="submit" id="submit" />
       </form>
     </div>
+    <script src="bower_components/jquery/jquery.js"></script>
     <script type="text/javascript" src="rfid-reader.js"></script>
   </body>
 </html>
