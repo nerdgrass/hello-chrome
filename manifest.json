@@ -1,11 +1,23 @@
+// {
+//   "name": "Hello, Chrome!",
+//   "description": "My first Chrome App.",
+//   "version": "0.1",
+//   "app": {
+//     "background": {
+//       "scripts": ["background.js"]
+//     }
+//   },
+//   "icons": { "16": "calculator-16.png", "128": "calculator-128.png" }
+// }
+
 {
   "name": "Hello, Chrome!",
-  "description": "My first Chrome App.",
   "version": "0.1",
   "app": {
     "background": {
       "scripts": ["background.js"]
     }
   },
-  "icons": { "16": "calculator-16.png", "128": "calculator-128.png" }
+  "permissions": ["usb"],
+  "optional_permissions": [ {"usbDevices": [{"vendorId": 1917, "productId": 1040}]}]
 }
